@@ -9,9 +9,9 @@ module.exports = {
   devServer: {
     open: true,
     publicPath: '/build/',
-    // proxy: {
-    //   '/api/leaders': 'http://localhost:3000/api/leaders',
-    // },
+    proxy: {
+      '/getWord': 'http://localhost:3000',
+    },
   },
   mode: process.env.NODE_ENV,
   module: {

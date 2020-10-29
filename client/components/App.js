@@ -27,10 +27,10 @@ class App extends Component {
   }
   
   componentDidMount() {
-     fetch('/', {
+     fetch('/getWord', {
         method: 'get'
     })
-        .then(response => response.text())
+      .then(response => response.text())
        .then(data => {
          console.log(data)
         //  this.setState({

@@ -4,12 +4,16 @@ const path = require('path');
 const cookieController = require('../controllers/cookieController')
 const dbController = require('../controllers/dbController')
 
+app.get('/getWord', dbController.generateWord, (req, res, next) => {
+res.status(200).send("Successful get")
+})
+
 app.post('/submit', dbController.submitWord, (req, res, next) => {
 res.status(200).send("Successful submission")
 })
 
-app.get('/', dbController.generateWord, (req, res, next) => {
-res.status(200).send("Successful get")
+app.use('/', (req, res, next) => {
+res.status(404).send("That page does not exist")
 })
 
 // if (process.env.NODE_ENV === 'production') {
