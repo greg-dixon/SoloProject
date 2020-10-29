@@ -6,7 +6,7 @@ dbController.generateWord = (req, res, next) => {
     // let count;
     // Word.count({}, (err, num) => {
     //     console.log(count)
-    //     count = num;
+    //     res.locals.count = num;
     // })
     return next();
 }

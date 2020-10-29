@@ -11,6 +11,7 @@ module.exports = {
     publicPath: '/build/',
     proxy: {
       '/getWord': 'http://localhost:3000',
+      '/submit' : 'http://localhost:3000',
     },
   },
   mode: process.env.NODE_ENV,

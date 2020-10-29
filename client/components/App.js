@@ -19,7 +19,10 @@ class App extends Component {
   }
 
   handleClick() {
-   
+    fetch('/submit', {
+     method: 'post'
+    })
+    .then
  }
 
   handleChange() {

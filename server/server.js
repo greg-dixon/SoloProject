@@ -5,7 +5,7 @@ const cookieController = require('../controllers/cookieController')
 const dbController = require('../controllers/dbController')
 
 app.get('/getWord', dbController.generateWord, (req, res, next) => {
-res.status(200).send("Successful get")
+res.status(200).send(res.locals)
 })
 
 app.post('/submit', dbController.submitWord, (req, res, next) => {
