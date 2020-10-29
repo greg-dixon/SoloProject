@@ -1,38 +1,6 @@
 // const { wordCache } = require('./db.js');
 // const mongoose = require('mongoose')
 
-const dateCheck = new Date();
-
-const dayCache = {
-  1: 'Monday',
-  2: 'Tuesday',
-  3: 'Wednesday',
-  4: 'Thursday',
-  5: 'Friday',
-  6: 'Saturday',
-  7: 'Sunday',
-}
-
-const monthCache = {
-  1: 'January',
-  2: 'Febuary',
-  3: 'March',
-  4: 'April',
-  5: 'May',
-  6: 'June',
-  7: 'July',
-  8: 'August',
-  9: 'September',
-  10: 'October',
-  11: 'November',
-  12: 'December',
-}
-
-const month = monthCache[dateCheck.getMonth()];
-const date = dateCheck.getDate();
-const day = dayCache[dateCheck.getDay()];
-
-
 const wordCache = [{
     word: 'Bedevil \\ bi-ˈde-vəl \\',
     definition: 'To torment or harass',
@@ -61,12 +29,6 @@ const wordCache = [{
   } 
 ]
 
-
-
-
-
-
-
 const randomInteger = (objectSize) => {
   return Math.floor(Math.random() * Math.floor(objectSize));
 };
@@ -84,12 +46,7 @@ const quote = generatedWord.quote;
 const photoLink = generatedWord.photoLink;
 
 
-
-
 const content = {
-  month,
-  date,
-  day,
   word,
   definition,
   quote,

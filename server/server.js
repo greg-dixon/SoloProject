@@ -1,8 +1,11 @@
 const express = require('express');
+const cookieParser = require('cookieParser')
 const app = express();
 const path = require('path');
 const cookieController = require('../controllers/cookieController')
-const dbController = require('../controllers/dbController')
+const dbController = require('../controllers/dbController');
+
+app.use(cookieParser())
 
 app.get('/getWord', dbController.generateWord, (req, res, next) => {
 res.status(200).send(res.locals)
