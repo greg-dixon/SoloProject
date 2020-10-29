@@ -3,8 +3,7 @@ import content from '../../contentGenerator';
 
 
 
-const Photo = (props) => {
-    console.log(content)
+const Word = (props) => { 
     return (
         <div id='wordDiv'>
             <p id='word'>{content.word}
@@ -15,4 +14,4 @@ const Photo = (props) => {
     )
 }
 
-export default Photo;
+export default Word;
