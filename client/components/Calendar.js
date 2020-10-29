@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const dayCache = {
     1: 'Monday',
@@ -26,17 +26,12 @@ const monthCache = {
 };
 
 const Calendar = () => {
-    // const [date, setDate] = useState(new Date())
-
-    const dateCheck = new Date();
-    const month = monthCache[dateCheck.getMonth()];
-    const date = dateCheck.getDate();
-    const day = dayCache[dateCheck.getDay()];
+    const [date, setDate] = useState(new Date())
     return (
         <div id='calendarDiv'>
             <img id='calendarImg' src={'https://www.freeiconspng.com/thumbs/calendar-icon-png/blank-calendar-icon-png-30.png'}></img>
-            <p id='calendarDay' class = 'calendarText'>{day}</p>
-                <p id='calendarDate' class='calendarText'>{month + " " + date}</p>
+            <p id='calendarDay' className = 'calendarText'>{dayCache[date.getDay()]}</p>
+                <p id='calendarDate' className='calendarText'>{monthCache[date.getMonth()] + " " + date.getDate()}</p>
         </div>
     )
 }

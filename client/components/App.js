@@ -15,9 +15,7 @@ class App extends Component {
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.handleClick = this.handleClick.bind(this);
-    this.state = {
-      date: new Date()
-    }
+    this.state = {};
   }
 
   handleClick() {
@@ -35,12 +33,12 @@ class App extends Component {
         .then(response => response.text())
        .then(data => {
          console.log(data)
-         this.setState({
-           word: data.word,
-           definition: data.definition,
-           quote: data.quote,
-           photoLink: data.photoLink,
-         })
+        //  this.setState({
+        //    word: data.word,
+        //    definition: data.definition,
+        //    quote: data.quote,
+        //    photoLink: data.photoLink,
+        //  })
        })
   }
 
