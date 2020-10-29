@@ -1,0 +1,137 @@
+body {
+  background: $peach;
+   
+}
+
+#root{
+// display: grid;
+// grid-template-areas:  
+// "logo calendar"
+// "photo photo"
+// "word word";
+// grid-template-columns: 1fr 1fr;
+// grid-template-rows: 1fr 1fr 1fr;
+      font-family: 'Lucida Sans', sans-serif;              
+}
+h1 {
+  text-align: center;
+}
+
+#moiraDiv {
+  width: 25%;
+  margin: 0 auto;
+}
+
+#moiraImg {
+  // position: fixed;
+  // left: 350px;
+  //  float: center;
+margin-top: 30px;
+border: 5px solid $yellow;
+border-radius: 25%;
+ max-width: 300px;
+  height: auto;
+}
+
+#calendarDiv {
+
+}
+
+#calendarImg {
+  // position: fixed;
+  // right: 1px;
+  // top:13px;
+  float: right;
+  // display: inline-block;
+  width: 250px;
+  height: 241px;
+}
+
+.calendarText{
+ font-size: 26px; 
+}
+
+#calendarDay {
+position: fixed;
+  right: 80px;
+top:120px;
+}
+
+#calendarDate {
+position: fixed;
+right: 50px;
+top: 150px;
+}
+
+
+
+#wordDiv {
+  width: 50%;
+  margin: 20px auto;
+  border: 5px groove $yellow;
+  background-color: white;
+  max-width: 700px;
+  height: auto;
+}
+
+#word {
+text-align: center;
+}
+
+#logoDiv {
+ 
+}
+
+#logo {
+  //   right: 30px;
+  // top:30px;
+  //  display: inline-block;
+   float: left;
+ max-width: 250px;
+  height: auto;
+
+}
+
+#formDiv {
+ width: 20%;
+  margin: 20px auto;
+  padding: 5px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+
+// #board {
+//   width: 390px;
+//   height: 390px;
+//   border: 5px solid $lightOrange;
+//   background-color: $darkBlue;
+//   margin: 20px auto;
+//   padding: 0;
+// }
+
+// .square {
+//   box-sizing: border-box;
+//   float: left;
+//   display: inline-block;
+//   font-size: 0;
+//   line-height: 0;
+//   width: 120px;
+//   height: 120px;
+//   border-radius: 4px;
+//   background-color: white;
+//   border: 1px solid gainsboro;
+//   margin: 5px;
+//   font-size: 2em;
+//   font-weight: 550;
+//   line-height: 100px;
+//   text-align: center;
+//   cursor: pointer;
+
+//   &:hover {
+//     background-color: darken(white, 15);
+//}
+//   }
